@@ -1,0 +1,259 @@
+/* ======================== */
+/* ===== Reset & Dasar ==== */
+/* ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root, html {
+  scrollbar-gutter: stable; /* agar ruang scrollbar selalu ada */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffefc;
+  color: #4a3f35;
+  overflow-y: scroll; /* supaya layout tidak berubah saat scrollbar muncul */
+}
+
+/* ============================ */
+/* ===== Header & Navigasi ==== */
+/* ============================ */
+header {
+  background-color: #f7c948;
+  color: #4a3f35;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a3f35;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* ===== Main & Section ==== */
+/* ========================= */
+main {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.alasan-container,
+.produk-container,
+.kontak-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.alasan-container h2,
+.produk-container h2,
+.kontak-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #4a3f35;
+}
+
+/* =============================== */
+/* ===== Keunikan (Beranda) ===== */
+/* =============================== */
+.alasan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.alasan-item {
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================== */
+/* ===== Produk KepalKuy ==== */
+/* =========================== */
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.produk-item {
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.produk-item:hover {
+  transform: scale(1.03);
+}
+
+.produk-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.produk-item figcaption {
+  margin-top: 10px;
+}
+
+.produk-item span {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+  color: #6b4c2f;
+}
+
+/* ======================== */
+/* ===== Kontak Kami ===== */
+/* ======================== */
+.kontak-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.kontak-item {
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.kontak-item a {
+  color: #4a3f35;
+  text-decoration: none;
+}
+
+.kontak-item a:hover {
+  text-decoration: underline;
+}
+
+/* ======= Komentar Section (DOM API) ======= */
+.komentar-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.komentar-input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.komentar-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f7c948;
+  color: #4a3f35;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.komentar-list {
+  margin-top: 30px;
+}
+
+.komentar-list p {
+  padding: 10px;
+  background-color: #ffe9d5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.komentar-list button {
+  margin-left: 15px;
+  background: #e57373;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* ===== Warna Box ===== */
+/* ===================== */
+.red    { background-color: #fde2e1; }
+.yellow { background-color: #fff9c4; }
+.green  { background-color: #d0f0c0; }
+.blue   { background-color: #d6ecff; }
+.purple { background-color: #f3e8ff; }
+.peach  { background-color: #ffe9d5; }
+
+/* ================== */
+/* ===== Footer ===== */
+/* ================== */
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #4a3f35;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  backdrop-filter: blur(4px);
+}
+
+/* ======================= */
+/* ===== Responsive ====== */
+/* ======================= */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .alasan-grid,
+  .produk-grid,
+  .kontak-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}

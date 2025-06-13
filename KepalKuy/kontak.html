@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - KepalKuy</title>
+  <link rel="stylesheet" href="KepalKuy.css" />
+  <link rel="icon" href="Logo KepalKuy Bulat.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>KepalKuy</h1>
+    <p>Nasi Cokot Kekinian, Enak, Murah, Bikin Nagih dan Cocok Untuk Mahasiswa!</p>
+    <nav>
+      <ul>
+        <li><a href="home.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="kontak-container">
+      <h2>Hubungi Kami</h2>
+      <div class="kontak-grid">
+        <div class="kontak-item red">
+          <h3>Amel</h3>
+          <p>📞 <a href="https://wa.me/6282297768587" target="_blank">+62 822-9776-8587</a></p>
+          <p>📷 <a href="https://www.instagram.com/mellziix?igsh=MTFjNmd1aXZvbHFtZw==" target="_blank">@mellziix</a></p>
+        </div>
+        <div class="kontak-item peach">
+          <h3>Vanissa</h3>
+          <p>📞 <a href="https://wa.me/6282299526410" target="_blank">+62 822-9952-6410</a></p>
+          <p>📷 <a href="https://www.instagram.com/zassinav?igsh=YWwwanppcGMwYjRy" target="_blank">@zassinav</a></p>
+        </div>
+      </div>
+
+      <!-- Form Komentar DOM API -->
+      <section class="komentar-section">
+        <h2>Tinggalkan Komentar</h2>
+        <input type="text" id="komentarInput" class="komentar-input" placeholder="Tulis komentarmu di sini...">
+        <button id="tambahKomentarBtn" class="komentar-btn">Kirim</button>
+        <div id="daftarKomentar" class="komentar-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KepalKuy</p>
+  </footer>
+
+  <script src="KepalKuy.js"></script>
+</body>
+</html>
